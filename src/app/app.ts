@@ -9,4 +9,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('counterApp');
+  counter:number = 0;
+
+  handleIncrement(){
+    this.counter = this.counter + 1;
+  }
+
+  handleDecrement(){
+    this.counter = this.counter - 1;
+  }
 }

@@ -2,7 +2,7 @@
 <div style="text-align: center;">
   <h2 class="count">{{counter}}</h2>
   <div>
-    <button  class="btn bg-red">Decrement</button>
+    <button (click)="handleDecrement()" class="btn bg-red">Decrement</button>
     <button (click)="handleIncrement()" class="btn bg-green">Increment</button>
     <button class="btn bg-blue">Reset</button>
   </div>

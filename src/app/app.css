@@ -5,6 +5,7 @@
     margin: 10px;
     color: #fff;
     cursor: pointer;
+    border: #000;
 }
 
 .bg-red{
@@ -15,4 +16,17 @@
 }
 .bg-blue{
     background-color: blue;
+}
+
+.btn:hover{
+    border: 2px solid #fff;
+}
+.count{
+    width: 100px;
+    background: grey;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
 }

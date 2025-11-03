@@ -9,6 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('counterApp');
+  // use an Angular signal for reactive counter state
   counter = signal(0);
 
   handleIncrement(){
@@ -21,5 +22,16 @@ export class App {
 
   handleReset(){
     this.counter.set(0);
+  }
+
+  // keep the existing helper but operate on the signal
+  handleCounter(val: string){
+    if (val === 'minus') {
+      this.handleDecrement();
+    } else if (val === 'plus') {
+      this.handleIncrement();
+    } else {
+      this.handleReset();
+    }
   }
 }

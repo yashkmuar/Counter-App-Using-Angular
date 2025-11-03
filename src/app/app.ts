@@ -27,6 +27,9 @@ export class App {
   // keep the existing helper but operate on the signal
   handleCounter(val: string){
     if (val === 'minus') {
+      if (this.counter() == 0) {
+        return;
+      }
       this.handleDecrement();
     } else if (val === 'plus') {
       this.handleIncrement();
